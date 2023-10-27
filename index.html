@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code With Me | Accueil</title>
+  <link rel="stylesheet" href="assets/styles/global.css">
+  <link rel="stylesheet" href="assets/styles/index.css">
+</head>
+
+<body>
+  <header class="topbar">
+    <img class="logo" onclick="window.location.replace('index.html')" src="assets/images/logo-codewithme.png"
+      alt="logo de Code With Me">
+
+    <nav class="nav">
+      <div class="left">
+        <a class="current-link" href="index.html">Accueil</a>
+        <a href="#">Mon profil</a>
+        <a href="#">Discussions</a>
+      </div>
+
+      <div class="right">
+        <div class="lang-button">
+          <div onclick="showLangOptions(event)" onkeypress="showLangOptions(event)" aria-label="selection de la langue"
+            class="select" tabindex="0" role="button">
+            <div class="value">
+              <div class="fr lang selected-lang">
+                <img src="assets/images/icons/flag-france.svg" alt="">
+                <span>FR</span>
+              </div>
+              <div class="en lang">
+                <img src="assets/images/icons/flag-united-kingdom.svg" alt="">
+                <span>EN</span>
+              </div>
+            </div>
+
+            <img src="assets/images/icons/chevron-down.svg" alt="">
+          </div>
+
+          <div class="options">
+            <button aria-label="français" class="fr lang selected-lang">
+              <img src="assets/images/icons/flag-france.svg" alt="">
+              <span>FR</span>
+            </button>
+            <button aria-label="anglais" class="en lang">
+              <img src="assets/images/icons/flag-united-kingdom.svg" alt="">
+              <span>EN</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="links">
+          <a href="#" class="search">
+            <img src="assets/images/icons/search.svg" alt="">
+            Rechercher
+          </a>
+
+          <a href="#" class="publish-ad"> Poster une annonce </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="background-blur"></div>
+
+    <div class="burger-button">
+      <button onclick="openNav()" aria-label="ouvrir le menu" class="open">
+        <img src="assets/images/icons/menu-burger.svg" alt="">
+      </button>
+      <button onclick="closeNav()" aria-label="fermer le menu" class="close">
+        <img src="assets/images/icons/menu-cross.svg" alt="">
+      </button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="hero-section">
+      <div class="text">
+        <h1>Formez une équipe de professionnels</h1>
+        <p>
+          Trouvez l’équipe parfaite, donnez vie à vos idées et propulsez vos
+          projets vers de nouveaux sommets. Rejoignez Code With Me et
+          commencez à coder avec nous dès aujourd’hui !
+        </p>
+      </div>
+      <div class="calls-to-action">
+        <a href="#" class="search">
+          <img src="assets/images/icons/search.svg" alt="">
+          Rechercher
+        </a>
+        <a href="#" class="publish-ad">
+          Poster une annonce
+          <img src="assets/images/icons/arrow-tr.svg" alt="">
+        </a>
+      </div>
+    </section>
+
+    <section class="social-proofs">
+      <h2 style="display: none">Des chiffres qui parlent d'eux mêmes</h2>
+      <span class="social-proof">
+        <b>1500+</b>
+        Mise en relation
+      </span>
+      <span class="social-proof">
+        <b>26</b>
+        Nationnalités
+      </span>
+      <span class="social-proof">
+        <b>6000+</b>
+        Professionnels actifs
+      </span>
+    </section>
+
+    <section class="about-us">
+      <h2>A propos de Code With Me</h2>
+      <p>
+        Chez Code With Me, nous croyons en la puissance de la collaboration.
+        Fondée en 2023, notre mission est de connecter les professionnels du
+        monde de l’informatique du monde entier et de faciliter la réalisation
+        de projets ambitieux. Notre vision est de créer un espace où chaque
+        idée a le potentiel de devenir réalité. Nous sommes convaincus que les
+        meilleures solutions naissent de la collaboration et du partage des
+        compétences. Nous sommes fiers de ce que nous avons accompli jusqu’à
+        présent et sommes impatients de voir ce que l’avenir nous réserve.
+        Rejoignez-nous dans cette aventure passionnante et découvrez comment
+        Code With Me peut vous aider à réaliser vos rêves informatiques.
+      </p>
+    </section>
+
+    <section class="testimonies">
+      <h2>Une mise en relation de confiance</h2>
+      <div class="testimonies-container">
+        <article class="testimony">
+          <div class="user">
+            <img src="assets/images/arnaud-b.png" alt="Arnaud B.">
+            <div>
+              <h3>Arnaud B.</h3>
+              <span>Illustrateur</span>
+            </div>
+          </div>
+          <div class="stars">
+            <img src="assets/images/icons/star-filled.svg" alt="étoile remplie">
+            <img src="assets/images/icons/star-filled.svg" alt="étoile remplie">
+            <img src="assets/images/icons/star-filled.svg" alt="étoile remplie">
+            <img src="assets/images/icons/star-filled.svg" alt="étoile remplie">
+            <img src="assets/images/icons/star-filled.svg" alt="étoile remplie">
+          </div>
+          <p class="quote">
+            “En tant qu’illustrateur, j’ai pu collaborer avec des développeurs
+            talentueux et apporter ma touche artistique à des projets
+            informatiques. La plateforme est facile à utiliser et la
+            communauté est très accueillante.”
+          </p>
+        </article>
+        <article class="testimony">
+          <div class="user">
+            <img src="assets/images/lucy-t.png" alt="Lucy T.">
+            <div>
+              <h3>Lucy T.</h3>
+              <span>Développeuse Ruby On Rails</span>
+            </div>
+          </div>
+          <div class="stars">
+            <img src="assets/images/icons/star-filled.svg" alt="étoile remplie">
+            <img src="assets/images/icons/star-filled.svg" alt="étoile remplie">
+            <img src="assets/images/icons/star-filled.svg" alt="étoile remplie">
+            <img src="assets/images/icons/star-filled.svg" alt="étoile remplie">
+            <img src="assets/images/icons/star-filled.svg" alt="étoile remplie">
+          </div>
+          <p class="quote">
+            “Code With Me has been a game-changer for me. As a freelance
+            developer, finding the right team for my projects was always a
+            challenge. But with Code With Me, I was able to connect with
+            talented professionals who shared my vision. The platform is easy
+            to use and the community is incredibly supportive. I highly
+            recommend it!”
+          </p>
+        </article>
+        <article class="testimony">
+          <div class="user">
+            <img src="assets/images/william-b.png" alt="William B.">
+            <div>
+              <h3>William B.</h3>
+              <span>Développeur Freelance</span>
+            </div>
+          </div>
+          <div class="stars">
+            <img src="assets/images/icons/star-filled.svg" alt="étoile remplie">
+            <img src="assets/images/icons/star-filled.svg" alt="étoile remplie">
+            <img src="assets/images/icons/star-filled.svg" alt="étoile remplie">
+            <img src="assets/images/icons/star-filled.svg" alt="étoile remplie">
+            <img src="assets/images/icons/star.svg" alt="étoile vide">
+          </div>
+          <p class="quote">
+            “J’ai pu collaborer avec des professionnels de l’informatique
+            talentueux sur des projets passionnants. La plateforme est
+            conviviale et la communauté est très active.”
+          </p>
+        </article>
+      </div>
+
+      <div class="search">
+        <a href="#" class="search-pro">Trouver un professionnels</a>
+        <a href="#" class="search-team">Trouver une équipe</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="credits">
+      <img class="logo" src="assets/images/logo-codewithme.png" alt="Code With Me">
+      Tous droits réservés © 2023
+    </div>
+    <div class="legal">
+      <a href="#">Condition Générale d’utilisation (CGU)</a>
+      <a href="#">Mentions Légales</a>
+    </div>
+    <a class="creator" href="https://www.dev-boost.fr" title="(lien externe)">
+      Site réalisé par Dev Boost
+      <img src="assets/images/icons/external-link.svg" alt="">
+    </a>
+  </footer>
+
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>

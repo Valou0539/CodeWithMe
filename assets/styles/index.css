@@ -1,0 +1,284 @@
+.main {
+  margin: 48px auto 80px;
+  width: 1024px;
+  max-width: calc(100% - 32px);
+}
+
+section h2 {
+  font-family: "Paytone One", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+/* Hero Section */
+
+.hero-section {
+  margin-bottom: 48px;
+}
+
+.hero-section h1 {
+  font-family: "Paytone One", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+.hero-section p {
+  font-size: 20px;
+  text-align: justify; /* à la demande du client */
+  margin-bottom: 48px;
+}
+
+.hero-section a {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-section .search {
+  border: 1px solid var(--text);
+  padding: 7px 15px;
+  margin-bottom: 16px;
+}
+
+.hero-section .search img {
+  width: 28px;
+  height: 28px;
+}
+
+.hero-section .publish-ad {
+  color: var(--primary-button-text);
+  background-color: var(--primary-button);
+  padding: 12px 20px;
+  font-weight: 500;
+}
+
+.hero-section .publish-ad img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Social Proofs */
+
+.social-proofs {
+  margin-bottom: 48px;
+}
+
+.social-proof {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.social-proof b {
+  display: block;
+  font-family: "Paytone One", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+/* About Us */
+
+.about-us {
+  margin-bottom: 48px;
+}
+
+.about-us h2 {
+  margin-bottom: 16px;
+}
+
+.about-us p {
+  font-size: 18px;
+  text-align: justify; /* à la demande du client */
+}
+
+/* Testimony */
+
+.testimonies h2 {
+  margin-bottom: 32px;
+  text-align: center;
+  width: 100%;
+}
+
+.testimonies-container {
+  margin-bottom: 40px;
+}
+
+.testimony {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.testimony:nth-last-of-type(2n) {
+  background-color: var(--accent);
+  padding: 16px;
+}
+
+.testimony .user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.testimony .user img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.testimony .user h3 {
+  font-size: 20px;
+}
+
+.testimony .user span {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.testimony .stars {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.testimony .quote {
+  font-size: 16px;
+  text-align: justify;
+  font-weight: 300;
+}
+
+.testimonies .search-pro {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 16px;
+  font-size: 18px;
+}
+
+.testimonies .search-team {
+  display: block;
+  margin: auto;
+  max-width: 800px;
+  background: var(--primary-button);
+  color: var(--primary-button-text);
+  text-align: center;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* responsive */
+
+@media only screen and (min-width: 780px) {
+  section h2 {
+    font-size: 48px;
+  }
+
+  .hero-section .text {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    margin-bottom: 24px;
+  }
+
+  .hero-section h1 {
+    font-size: 54px;
+    width: 55%;
+    margin: 0;
+  }
+
+  .hero-section p {
+    margin: 0;
+    width: 45%;
+  }
+
+  .hero-section .calls-to-action {
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: flex-end;
+    padding: 8px;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.5) 75%,
+        rgba(0, 0, 0, 0.8)
+      ),
+      url("../images/hero-section.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero-section .search {
+    font-size: 22px;
+  }
+
+  .hero-section .search img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .hero-section .publish-ad {
+    font-size: 24px;
+  }
+
+  .social-proofs {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    font-size: 24px;
+  }
+
+  .social-proofs .social-proof b {
+    font-size: 48px;
+  }
+
+  .about-us p {
+    column-count: 2;
+    column-gap: 48px;
+  }
+
+  .testimonies-container {
+    display: flex;
+    align-items: start;
+  }
+
+  .testimony {
+    width: calc(100% / 3);
+    margin-bottom: 0;
+  }
+
+  .testimony:nth-last-of-type(2n + 1) {
+    padding: 60px 16px 0;
+  }
+
+  .testimonies .search {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .testimonies .search a {
+    width: auto;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .testimony:nth-last-of-type(2n) {
+    padding: 32px;
+  }
+
+  .testimony:nth-last-of-type(2n + 1) {
+    padding: 60px 32px 0;
+  }
+}
